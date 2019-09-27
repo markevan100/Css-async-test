@@ -1,0 +1,23 @@
+<div class="initial">
+  <h1>Everything should start centered</h1>
+  <h2>Then, I should turn red</h2>
+  <h3>Next, I'll get crossed out (and turn blue)</h3>
+  <h4>Lastly, I'll appear out of nowhere!</h4>
+</div>
+
+<link rel="stylesheet" href="css/initial.css">
+<link rel="stylesheet" href="css/first.css" media="print" id="myFirstEl">
+<link rel="stylesheet" href="css/second.css" media="print" id="mySecondEl">
+<link rel="stylesheet" href="css/third.css" media="print" id="myThirdEl">
+
+<script>
+  setTimeout(function(){
+    document.getElementById('myFirstEl').media = 'all';
+  }, 2000);
+  setTimeout(function(){
+    document.getElementById('mySecondEl').media = 'all';
+  }, 4000);
+  setTimeout(function(){
+    document.getElementById('myThirdEl').media = 'all';
+  }, 6000);
+</script>
